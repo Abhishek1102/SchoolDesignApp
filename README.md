@@ -1,5 +1,5 @@
 # SchoolDesignApp
-It is only an app design based on School Apps.
+It is only an app design based on School Related Apps.
 
 This app only consist of design for School based application, only consist of basics backend coding enough to view different screen and designs of this app.
 
