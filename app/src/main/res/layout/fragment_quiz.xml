@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragment.QuizFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_gradient"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_skip"
+                style="@style/white_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Skip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/quiz_progress_shape"
+            android:paddingHorizontal="@dimen/_5sdp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/progress_bar_background"
+                android:indeterminate="false"
+                android:max="100"
+                android:paddingVertical="@dimen/_1sdp"
+                android:progress="50"
+                android:progressDrawable="@drawable/curved_progress_bar" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_timer"
+                style="@style/white_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="20 Sec" />
+
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/clock"
+                app:tint="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_que"
+                style="@style/white_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Question" />
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_questionNo"
+                style="@style/white_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/tv_que"
+                android:text="1" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_slash"
+                style="@style/white_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_questionNo"
+                android:text="/" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_totalQuestion"
+                style="@style/white_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_toEndOf="@+id/tv_slash"
+                android:text="10" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_layout_totalplayers"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_6sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/users"
+                    app:tint="@color/white" />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_userCount"
+                    style="@style/white_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="265" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/rounded_layout"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewBold
+                android:id="@+id/tv_question"
+                style="@style/black_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:lineSpacingExtra="@dimen/_1sdp"
+                android:text="Who won the 2011 Cricket ICC World Cup?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/rounded_border_green"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp">
+
+                <com.example.schoolproject.helper.CustomTextView
+                    android:id="@+id/tv_A"
+                    style="@style/gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A." />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_optionA"
+                    style="@style/gray_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:text="India" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:background="@drawable/circle_layout_gray"
+                    android:backgroundTint="#6AC259"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:src="@drawable/tick"
+                        app:tint="@color/white" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_gray"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp">
+
+                <com.example.schoolproject.helper.CustomTextView
+                    android:id="@+id/tv_B"
+                    style="@style/gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B." />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_optionB"
+                    style="@style/gray_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:text="Autralia" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:background="@drawable/circle_layout_gray">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_red"
+                android:gravity="center_vertical"
+
+                android:padding="@dimen/_10sdp">
+
+                <com.example.schoolproject.helper.CustomTextView
+                    android:id="@+id/tv_C"
+                    style="@style/gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C." />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_optionC"
+                    style="@style/gray_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:text="South Africa" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:background="@drawable/circle_layout_gray"
+                    android:backgroundTint="#E92E30"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:src="@drawable/wrong"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_gray"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp">
+
+                <com.example.schoolproject.helper.CustomTextView
+                    android:id="@+id/tv_D"
+                    style="@style/gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D." />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_optionD"
+                    style="@style/gray_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:text="Sri Lanka" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:background="@drawable/circle_layout_gray">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_16sdp"
+            android:backgroundTint="#859FD1"
+            android:layout_marginTop="-0.5dp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/layout_bottom_quiz_1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:backgroundTint="#5E7EBF"
+            android:layout_marginTop="-0.5dp"
+            android:layout_marginHorizontal="@dimen/_35sdp"
+            android:background="@drawable/layout_bottom_quiz_2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

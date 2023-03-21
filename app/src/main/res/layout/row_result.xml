@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.schoolproject.helper.CustomTextViewSemiBold
+        android:id="@+id/tv_resultSubjectName"
+        style="@style/black_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:includeFontPadding="false"
+        android:padding="@dimen/_8sdp"
+        android:singleLine="true"
+        android:text="English" />
+
+    <com.example.schoolproject.helper.CustomTextViewSemiBold
+        style="@style/black_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:background="#E6EFFF"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:padding="@dimen/_8sdp"
+        android:singleLine="true"
+        android:text="100" />
+
+    <com.example.schoolproject.helper.CustomTextViewSemiBold
+
+        android:id="@+id/tv_resultSubjectMark"
+        style="@style/black_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:background="#F0F9EE"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:padding="@dimen/_8sdp"
+        android:singleLine="true"
+        android:text="84 - B" />
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragment.LeaveApplicationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_gradient"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/arrow" />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    style="@style/white_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/leave_application" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85"
+            android:background="@drawable/white_tltr_20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/edittext_color_border_8"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_6sdp">
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/txt_leave_teacher"
+                    style="@style/black_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.4"
+                    android:text="Class Teacher"
+                    android:visibility="gone" />
+
+                <com.example.schoolproject.helper.CustomEdittext
+                    android:id="@+id/edt_leave_teacher"
+                    style="@style/black_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Class Teacher"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edittext_color_border_8"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_6sdp">
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/txt_leave_title"
+                    style="@style/black_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.4"
+                    android:text="Application Title"
+                    android:visibility="gone" />
+
+                <com.example.schoolproject.helper.CustomEdittext
+                    android:id="@+id/edt_leave_title"
+                    style="@style/black_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Application Title"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edittext_color_border_8"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_6sdp">
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/txt_leave_description"
+                    style="@style/black_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.4"
+                    android:text="Description"
+                    android:visibility="gone" />
+
+                <com.example.schoolproject.helper.CustomEdittext
+                    android:id="@+id/edt_leave_description"
+                    style="@style/black_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Description"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/lv_sendDoubt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_white_button_8"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10sdp">
+
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_sendRequest"
+                    style="@style/white_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/send_request" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/view_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/ic_vector_bottom" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

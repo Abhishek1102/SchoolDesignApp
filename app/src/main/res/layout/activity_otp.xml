@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_gradient"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.40">
+
+                <com.example.schoolproject.helper.CustomTextViewSemiBold
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_desc"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:text="@string/hi_students"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_23sdp" />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:text="@string/verify_to_continue"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:src="@drawable/ic_vector" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.60"
+                android:background="@drawable/white_tltr_20"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_20sdp">
+
+                <com.example.schoolproject.helper.CustomTextViewSemiBold
+                    android:id="@+id/txtLogin"
+                    style="@style/black_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/lets_sign_you_in" />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    style="@style/black_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:alpha="0.7"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/enter_otp_to_continue" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+
+                    <View
+                        android:layout_width="@dimen/_4sdp"
+                        android:layout_height="match_parent" />
+
+                    <com.example.schoolproject.helper.CustomEdittext
+                        android:id="@+id/edt_otp1"
+                        style="@style/Edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/semi_rounded_border_color"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/_4sdp"
+                        android:layout_height="match_parent" />
+
+                    <com.example.schoolproject.helper.CustomEdittext
+                        android:id="@+id/edt_otp2"
+                        style="@style/Edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/semi_rounded_border_color"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/_4sdp"
+                        android:layout_height="match_parent" />
+
+                    <com.example.schoolproject.helper.CustomEdittext
+                        android:id="@+id/edt_otp3"
+                        style="@style/Edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/semi_rounded_border_color"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/_4sdp"
+                        android:layout_height="match_parent" />
+
+                    <com.example.schoolproject.helper.CustomEdittext
+                        android:id="@+id/edt_otp4"
+                        style="@style/Edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/semi_rounded_border_color"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/_4sdp"
+                        android:layout_height="match_parent" />
+
+                    <!--                <com.example.schoolproject.helper.CustomEdittext-->
+                    <!--                    android:id="@+id/edt_phone"-->
+                    <!--                    style="@style/Edittext"-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:hint="@string/mobile_no"-->
+                    <!--                    android:paddingStart="@dimen/_6sdp"-->
+                    <!--                    android:layout_marginVertical="@dimen/_10sdp"-->
+                    <!--                    android:imeOptions="actionDone"-->
+                    <!--                    android:inputType="number"-->
+                    <!--                    android:text="123456789"-->
+                    <!--                    android:maxLength="10"-->
+                    <!--                    android:singleLine="true" />-->
+
+                </LinearLayout>
+
+                <com.example.schoolproject.helper.CustomButton
+                    android:id="@+id/btnverify"
+                    style="@style/white_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
+                    android:text="@string/verify"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

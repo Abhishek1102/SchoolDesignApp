@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".fragment.EventDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp">
+
+        <ImageView
+            android:id="@+id/iv_eventDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/cyclerace"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/big_clock"
+                android:tint="@color/colorPrimary" />
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_eventdetailTime"
+                style="@style/black_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:singleLine="true"
+                android:text="06 Jan 20,09:00 AM"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <com.example.schoolproject.helper.CustomTextViewSemiBold
+            android:id="@+id/tv_eventdetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:text="Cycle Race"
+            style="@style/black_14"/>
+
+        <com.example.schoolproject.helper.CustomTextViewMedium
+            android:id="@+id/tv_eventdetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            style="@style/gray_12"/>
+
+    </LinearLayout>
+
+</LinearLayout>

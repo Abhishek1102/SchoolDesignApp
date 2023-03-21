@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:focusableInTouchMode="true"
+                android:id="@+id/relativeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingBottom="@dimen/_30sdp"
+                android:background="@drawable/blue_gradient">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:layout_marginBottom="@dimen/_80sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical">
+
+                        <com.example.schoolproject.helper.CustomTextViewSemiBold
+                            style="@style/white_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hi Jignesh" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp">
+
+                            <com.example.schoolproject.helper.CustomTextViewMedium
+                                style="@style/gray_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Class XI-B"
+                                android:textColor="@color/gray_3" />
+
+
+                            <com.example.schoolproject.helper.CustomTextViewMedium
+                                style="@style/gray_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:text="Roll no:64"
+                                android:textColor="@color/gray_3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/rounded_layout"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:paddingVertical="@dimen/_3sdp">
+
+                            <com.example.schoolproject.helper.CustomTextViewMedium
+                                style="@style/black_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2020-2022"
+                                android:textColor="@color/blue" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profilePhoto"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/user_icon" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBottom"
+                app:layout_constraintTop_toBottomOf="@+id/relativeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-30dp"
+                android:background="@drawable/white_tltr_20"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_80sdp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/row_dashboard" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearBottom"
+                app:layout_constraintTop_toTopOf="@+id/linearBottom"
+                tools:layout_editor_absoluteX="26dp">
+
+                <LinearLayout
+                    android:id="@+id/lv_attendence"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_border_layout"
+                    android:gravity="start|center_vertical"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/_22sdp"
+                    android:paddingStart="@dimen/_14sdp">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_attendance"/>
+
+
+                    <com.example.schoolproject.helper.CustomTextViewBold
+                        android:id="@+id/tv_percentage"
+                        style="@style/black_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="80.64%" />
+
+                    <com.example.schoolproject.helper.CustomTextViewMedium
+                        style="@style/gray_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Attendence" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv_feesdue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_border_layout"
+                    android:gravity="start|center_vertical"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/_22sdp"
+                    android:paddingStart="@dimen/_14sdp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_fees_due"/>
+
+                    <com.example.schoolproject.helper.CustomTextViewBold
+                        android:id="@+id/tv_fees"
+                        style="@style/black_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="\u20b96400" />
+
+                    <com.example.schoolproject.helper.CustomTextViewMedium
+                        style="@style/gray_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Fees Due" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

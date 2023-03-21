@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_color_border_8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                style="@style/gray_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/receipt_no" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_receiptNo"
+                style="@style/black_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#98761" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_6sdp"
+            android:background="@color/gray_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                style="@style/gray_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/month" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_month"
+                style="@style/black_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="October" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                style="@style/gray_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/payment_date" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_paymentDate"
+                style="@style/black_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Oct 20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                style="@style/gray_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pay Mode" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_payMode"
+                style="@style/black_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash on Counter" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/gray_2" />
+
+        <LinearLayout
+            android:id="@+id/lv_totalPendingAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                style="@style/gray_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Pending Amount" />
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_pendingAmount"
+                style="@style/black_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20b9999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_totalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                style="@style/gray_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Amount" />
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_amount"
+                style="@style/black_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20b9999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:gravity="center"
+            android:background="@color/colorPrimary">
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_payDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAY NOW"
+                android:layout_marginEnd="@dimen/_8sdp"
+                style="@style/white_12"/>
+
+            <ImageView
+                android:id="@+id/iv_feesdue"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tint="@color/white"
+                android:visibility="visible"
+                android:src="@drawable/right_arrow"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

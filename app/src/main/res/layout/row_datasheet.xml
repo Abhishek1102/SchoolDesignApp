@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:background="@drawable/edittext_color_border_8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_datasheetDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                style="@style/black_14"
+                android:singleLine="true"/>
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_datasheetMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JAN"
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/black_12"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.example.schoolproject.helper.CustomTextViewSemiBold
+                android:id="@+id/tv_datasheet_SubjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                style="@style/black_12"
+                android:singleLine="true"/>
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_datasheetDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/gray_12"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/clock"
+                android:tint="@color/gray_1"/>
+
+            <com.example.schoolproject.helper.CustomTextViewMedium
+                android:id="@+id/tv_datasheet_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="09:00 AM"
+                style="@style/gray_10"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

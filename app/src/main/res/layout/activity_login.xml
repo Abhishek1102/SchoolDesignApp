@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_gradient"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.40">
+
+                <com.example.schoolproject.helper.CustomTextViewSemiBold
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_desc"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:text="Hi Students"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_23sdp" />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:text="Sign in to continue"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:src="@drawable/ic_vector" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.60"
+                android:background="@drawable/white_tltr_20"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_20sdp">
+
+                <com.example.schoolproject.helper.CustomTextViewSemiBold
+                    android:id="@+id/txtLogin"
+                    style="@style/black_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/lets_sign_you_in" />
+
+                <com.example.schoolproject.helper.CustomTextViewMedium
+                    style="@style/black_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:alpha="0.7"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/login_msg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/edittext_color_border_8"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <com.example.schoolproject.helper.CustomTextView
+                        style="@style/black_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:text="+91" />
+
+                    <View
+                        android:layout_width="0.9dp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@color/gray_light_dark" />
+
+                    <com.example.schoolproject.helper.CustomEdittext
+                        android:id="@+id/edt_phone"
+                        style="@style/Edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="@string/mobile_no"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingStart="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:text="123456789" />
+
+                </LinearLayout>
+
+                <com.example.schoolproject.helper.CustomButton
+                    android:id="@+id/btnSignIn"
+                    style="@style/white_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
+                    android:text="@string/request_otp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
