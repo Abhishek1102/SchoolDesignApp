@@ -11,7 +11,7 @@ This app only consist of design for School based application, only consist of ba
 - Provides every functionality needed for school based application
 - School Gallery to view latest events photos
 
-<hr>
+-----
 ### SCREENSHOTS:-
 
 <img src="https://user-images.githubusercontent.com/71425576/226566952-c42cf757-8e97-41d2-a6f7-06a214168efa.jpg" width="250" height="500">
