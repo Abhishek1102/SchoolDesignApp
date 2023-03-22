@@ -3,15 +3,16 @@ It is only an app design based on School Related Apps.
 
 This app only consist of design for School based application, only consist of basics backend coding enough to view different screen and designs of this app.
 
-Feature:-
-->Perfect design for school based application
-->Simple yet cool choice of colors and icons
-->Navigation is simple which helps users to navigate through app easily
-->Provides design never seen before
-->Provides every functionality needed for school based application
-->School Gallery to view latest events photos
+## Feature:-
+- Perfect design for school based application
+- Simple yet cool choice of colors and icons
+- Navigation is simple which helps users to navigate through app easily
+- Provides design never seen before
+- Provides every functionality needed for school based application
+- School Gallery to view latest events photos
 
-SCREENSHOTS:-
+<hr>
+### SCREENSHOTS:-
 
 <img src="https://user-images.githubusercontent.com/71425576/226566952-c42cf757-8e97-41d2-a6f7-06a214168efa.jpg" width="250" height="500">
 <img src="https://user-images.githubusercontent.com/71425576/226567014-5cadcfa0-575a-4297-a797-501c0e084f87.jpg" width="250" height="500">
