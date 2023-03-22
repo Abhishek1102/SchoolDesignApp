@@ -35,4 +35,3 @@ This app only consist of design for School based application, only consist of ba
 <img src="https://user-images.githubusercontent.com/71425576/226567009-ffd6830c-57f6-44bd-9eac-2097cc990936.jpg" width="250" height="500">
 <img src="https://user-images.githubusercontent.com/71425576/226567010-4717cfed-0615-4360-8f87-c2e8ed9b97fb.jpg" width="250" height="500">
 <img src="https://user-images.githubusercontent.com/71425576/226567012-765af98f-c72e-4d93-9b61-6fc8f37bfb12.jpg" width="250" height="500">
-
